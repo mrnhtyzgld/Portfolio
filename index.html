@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nihat'ın kişisel portfolyosu — seçili işler, çalışma yaklaşımı ve iletişim." />
+    <meta name="theme-color" content="#f2efe7" />
+    <title>Nihat — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+    <header class="site-header">
+      <a class="brand" href="#ust" aria-label="Ana sayfa">N<span>.</span></a>
+      <nav aria-label="Ana menü">
+        <a href="#projeler">Projeler</a>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Koyu temayı aç" aria-pressed="false">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="icerik">
+      <section class="hero" id="ust">
+        <p class="eyebrow reveal">Merhaba, ben Nihat.</p>
+        <h1 class="reveal">Fikirleri çalışan,<br /><em>özenli dijital işlere</em><br />dönüştürüyorum.</h1>
+        <div class="hero-bottom reveal">
+          <p>Şimdilik burası sakin. Yakında yaptığım projeler, denemeler ve öğrendiklerim burada olacak.</p>
+          <a class="round-link" href="#projeler" aria-label="Projelere git">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" /></svg>
+          </a>
+        </div>
+        <div class="scribble" aria-hidden="true">work in progress</div>
+      </section>
+
+      <section class="projects section" id="projeler">
+        <div class="section-heading reveal">
+          <p class="index">01 / SEÇİLİ İŞLER</p>
+          <h2>Projeler için<br /><em>yer açıldı.</em></h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--coral reveal">
+            <div class="project-visual" aria-hidden="true">
+              <span class="shape shape--one"></span>
+              <span class="shape shape--two"></span>
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-copy">
+              <div>
+                <p class="project-type">İlk proje</p>
+                <h3>Buraya güzel bir şey gelecek.</h3>
+              </div>
+              <p>Problem, süreç ve sonuç; kısa ve dürüst bir anlatımla burada yerini alacak.</p>
+              <span class="status"><i></i> Hazırlanıyor</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--ink reveal">
+            <div class="project-visual" aria-hidden="true">
+              <span class="grid-orb"></span>
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-copy">
+              <div>
+                <p class="project-type">Sonraki durak</p>
+                <h3>İyi işler aceleye gelmiyor.</h3>
+              </div>
+              <p>Yeni işler tamamlandıkça bu alan gerçek ekranlar, detaylar ve bağlantılarla büyüyecek.</p>
+              <span class="status"><i></i> Sırada</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="hakkimda">
+        <p class="index reveal">02 / HAKKIMDA</p>
+        <div class="about-grid">
+          <h2 class="reveal">Merakla yapıyor,<br /><em>yaparken öğreniyorum.</em></h2>
+          <div class="about-copy reveal">
+            <p>Bu portfolyo da bitmiş bir vitrin değil; yeni projelerle birlikte gelişen canlı bir çalışma alanı.</p>
+            <p>Amacım gösterişli cümlelerden çok, düşünülmüş detaylar ve gerçekten işe yarayan sonuçlar paylaşmak.</p>
+            <div class="principles" aria-label="Çalışma ilkeleri">
+              <span>01&nbsp; Basit tut</span>
+              <span>02&nbsp; İyi düşün</span>
+              <span>03&nbsp; Bitir & paylaş</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="iletisim">
+        <p class="index reveal">03 / İLETİŞİM</p>
+        <div class="contact-inner reveal">
+          <p>Bir fikir mi var?</p>
+          <h2>Tanışalım<span>.</span></h2>
+          <a class="contact-link" href="https://github.com/mrnhtyzgld" target="_blank" rel="noreferrer">GitHub'da takip et <span aria-hidden="true">↗</span></a>
+          <p class="contact-note">Diğer iletişim bağlantıları yakında burada.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Nihat</p>
+      <p>İstanbul · TR</p>
+      <a href="#ust">Yukarı dön ↑</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
