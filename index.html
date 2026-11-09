@@ -3,114 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nihat'ın kişisel portfolyosu — seçili işler, çalışma yaklaşımı ve iletişim." />
-    <meta name="theme-color" content="#f2efe7" />
-    <title>Nihat — Portfolio</title>
+    <meta name="description" content="Nihat Emre Yüzügüldü — makine öğrenmesi, model optimizasyonu ve sistem projeleri." />
+    <meta name="theme-color" content="#050605" />
+    <title>Nihat — selected work</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#icerik">İçeriğe geç</a>
+    <a class="skip-link" href="#projeler">Projelere geç</a>
+    <div class="backdrop" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <a class="brand" href="#ust" aria-label="Ana sayfa">N<span>.</span></a>
-      <nav aria-label="Ana menü">
-        <a href="#projeler">Projeler</a>
-        <a href="#hakkimda">Hakkımda</a>
-        <a href="#iletisim">İletişim</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="Koyu temayı aç" aria-pressed="false">
-        <span aria-hidden="true">◐</span>
-      </button>
-    </header>
+    <div class="shell">
+      <header>
+        <a class="brand" href="./" aria-label="Ana sayfa">
+          <span class="brand-mark">N/</span>
+          <span class="brand-name">NIHAT.YZG</span>
+        </a>
+        <nav aria-label="Dış bağlantılar">
+          <span class="online"><i></i> ONLINE</span>
+          <a href="https://github.com/mrnhtyzgld" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
+        </nav>
+      </header>
 
-    <main id="icerik">
-      <section class="hero" id="ust">
-        <p class="eyebrow reveal">Merhaba, ben Nihat.</p>
-        <h1 class="reveal">Fikirleri çalışan,<br /><em>özenli dijital işlere</em><br />dönüştürüyorum.</h1>
-        <div class="hero-bottom reveal">
-          <p>Şimdilik burası sakin. Yakında yaptığım projeler, denemeler ve öğrendiklerim burada olacak.</p>
-          <a class="round-link" href="#projeler" aria-label="Projelere git">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" /></svg>
-          </a>
-        </div>
-        <div class="scribble" aria-hidden="true">work in progress</div>
-      </section>
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <p class="kicker"><span>~/portfolio</span> <b>●</b> selected_work</p>
+          <h1 id="page-title">Nihat Emre<br /><span>Yüzügüldü</span></h1>
+          <p class="intro-copy">Makine öğrenmesi modellerini gerçek sistemlere taşıyan; veriden, optimizasyondan ve iyi çalışan küçük araçlardan hoşlanan bir geliştirici.</p>
+        </section>
 
-      <section class="projects section" id="projeler">
-        <div class="section-heading reveal">
-          <p class="index">01 / SEÇİLİ İŞLER</p>
-          <h2>Projeler için<br /><em>yer açıldı.</em></h2>
-        </div>
-
-        <div class="project-list">
-          <article class="project-card project-card--coral reveal">
-            <div class="project-visual" aria-hidden="true">
-              <span class="shape shape--one"></span>
-              <span class="shape shape--two"></span>
-              <span class="project-number">01</span>
-            </div>
-            <div class="project-copy">
-              <div>
-                <p class="project-type">İlk proje</p>
-                <h3>Buraya güzel bir şey gelecek.</h3>
-              </div>
-              <p>Problem, süreç ve sonuç; kısa ve dürüst bir anlatımla burada yerini alacak.</p>
-              <span class="status"><i></i> Hazırlanıyor</span>
-            </div>
-          </article>
-
-          <article class="project-card project-card--ink reveal">
-            <div class="project-visual" aria-hidden="true">
-              <span class="grid-orb"></span>
-              <span class="project-number">02</span>
-            </div>
-            <div class="project-copy">
-              <div>
-                <p class="project-type">Sonraki durak</p>
-                <h3>İyi işler aceleye gelmiyor.</h3>
-              </div>
-              <p>Yeni işler tamamlandıkça bu alan gerçek ekranlar, detaylar ve bağlantılarla büyüyecek.</p>
-              <span class="status"><i></i> Sırada</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="about section" id="hakkimda">
-        <p class="index reveal">02 / HAKKIMDA</p>
-        <div class="about-grid">
-          <h2 class="reveal">Merakla yapıyor,<br /><em>yaparken öğreniyorum.</em></h2>
-          <div class="about-copy reveal">
-            <p>Bu portfolyo da bitmiş bir vitrin değil; yeni projelerle birlikte gelişen canlı bir çalışma alanı.</p>
-            <p>Amacım gösterişli cümlelerden çok, düşünülmüş detaylar ve gerçekten işe yarayan sonuçlar paylaşmak.</p>
-            <div class="principles" aria-label="Çalışma ilkeleri">
-              <span>01&nbsp; Basit tut</span>
-              <span>02&nbsp; İyi düşün</span>
-              <span>03&nbsp; Bitir & paylaş</span>
-            </div>
+        <section class="projects" id="projeler" aria-labelledby="projects-title">
+          <div class="window-bar">
+            <h2 id="projects-title">ÖNE ÇIKAN PROJELER</h2>
+            <p><span id="readout">4 PROJECTS</span> <i></i> <span class="desktop-only">OPEN WITH ↗</span></p>
           </div>
-        </div>
-      </section>
 
-      <section class="contact section" id="iletisim">
-        <p class="index reveal">03 / İLETİŞİM</p>
-        <div class="contact-inner reveal">
-          <p>Bir fikir mi var?</p>
-          <h2>Tanışalım<span>.</span></h2>
-          <a class="contact-link" href="https://github.com/mrnhtyzgld" target="_blank" rel="noreferrer">GitHub'da takip et <span aria-hidden="true">↗</span></a>
-          <p class="contact-note">Diğer iletişim bağlantıları yakında burada.</p>
-        </div>
-      </section>
-    </main>
+          <div class="project-grid">
+            <a class="project" href="https://github.com/mrnhtyzgld/DsitribuTweet" target="_blank" rel="noreferrer" data-readout="DISTRIBUTED / STREAMING">
+              <span class="number">01</span>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>DsitribuTweet</h3>
+                  <span class="arrow">↗</span>
+                </div>
+                <p>Canlı veri akışında anlamsal benzerlikle çalışan dağıtık öneri sistemi.</p>
+                <ul aria-label="Teknolojiler"><li>PYTHON</li><li>SCALA</li><li>KAFKA</li><li>QDRANT</li></ul>
+              </div>
+            </a>
 
-    <footer>
-      <p>© <span id="year"></span> Nihat</p>
-      <p>İstanbul · TR</p>
-      <a href="#ust">Yukarı dön ↑</a>
-    </footer>
+            <a class="project" href="https://github.com/mrnhtyzgld/recommendation-system" target="_blank" rel="noreferrer" data-readout="GRAPH / ML">
+              <span class="number">02</span>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Ad Intelligence</h3>
+                  <span class="arrow">↗</span>
+                </div>
+                <p>Graf tabanlı reklam zekâsı; segmentasyon, CTR ve öneri pipeline'ı.</p>
+                <ul aria-label="Teknolojiler"><li>PYTHON</li><li>NEO4J</li><li>ML</li></ul>
+              </div>
+            </a>
+
+            <a class="project" href="https://github.com/mrnhtyzgld/ultimate-onnx-converter" target="_blank" rel="noreferrer" data-readout="MODEL TOOLING / WIP">
+              <span class="number">03</span>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Ultimate ONNX</h3>
+                  <span class="arrow">↗</span>
+                </div>
+                <p>Model dönüştürme, quantization, test ve profilleme için terminal aracı.</p>
+                <ul aria-label="Teknolojiler"><li>PYTHON</li><li>ONNX</li><li>TUI</li><li>WIP</li></ul>
+              </div>
+            </a>
+
+            <a class="project" href="https://github.com/mrnhtyzgld/lama_inpaint_android" target="_blank" rel="noreferrer" data-readout="ON-DEVICE / VISION">
+              <span class="number">04</span>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>LaMa Android</h3>
+                  <span class="arrow">↗</span>
+                </div>
+                <p>ONNX Runtime ile tamamen cihaz üzerinde çalışan img2img ve inpainting.</p>
+                <ul aria-label="Teknolojiler"><li>C++</li><li>KOTLIN</li><li>JNI</li><li>ONNX</li></ul>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><span class="prompt">›</span> BUILDING USEFUL THINGS_</p>
+        <p>© <span id="year"></span> <span class="muted">/</span> <a href="https://github.com/mrnhtyzgld/Portfolio" target="_blank" rel="noreferrer">SOURCE ↗</a></p>
+      </footer>
+    </div>
 
     <script src="./script.js"></script>
   </body>
